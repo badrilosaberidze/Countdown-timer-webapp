@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer-body">
+            <div class="top-container">
+                <div class="timer-wrapper">
+                    <input type="text" placeholder="00" id="hour"> 
+                    <span>:</span> 
+                    <input type="text" placeholder="00" id="minute"> 
+                    <span>:</span> 
+                    <input type="text" placeholder="00" id="second">
+                </div>
+            </div>
+            
+            <div id="warn">Time Is Up !</div>
+
+            <ol id="lap-list">
+            </ol>
+
+            <div class="bottom-container">
+                <div id="play" class="button play-but" onclick="play()"><img src="images/play-button-arrowhead.svg" style="width: 25px; height: 25px;"></div>
+                <div id="pause" class="button pause-but" onclick="pause()"> <img src="images/pause.svg" style="width: 25px; height: 25px;"> </div>
+                <div class="rec" onclick="start()">  <img src="images/record.svg" style="width: 50px;height: 50px;"> </div>
+                <div class="button" onclick="restart()"> <img src="images/update-arrow.svg" style="width: 25px; height: 25px;"></div>
+            </div>
+            <img src="images/flag (1).svg" class="flag" onclick="addlap()">
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
